@@ -9,11 +9,11 @@ Focus Tube lets you choose which distractions to hide on YouTube. The extension 
 - Optionally hide Shorts shelves, Shorts video cards, and Shorts navigation on desktop and mobile YouTube. Opening a Shorts URL while this option is enabled returns to YouTube's home page.
 - Change settings from the toolbar popup; open YouTube tabs update without a reload.
 
-YouTube changes its markup frequently. If a distraction reappears, report the page URL, browser version, and a screenshot through [GitHub issues](https://github.com/animesh-algorithm).
+YouTube changes its markup frequently. If a distraction reappears, report the page URL, browser version, and a screenshot through [GitHub issues](https://github.com/animesh-algorithm/FocusTube/issues).
 
 ## Install for development
 
-1. Clone this repository.
+1. Clone `https://github.com/animesh-algorithm/FocusTube.git`.
 2. Open `chrome://extensions` in Chrome and turn on **Developer mode**.
 3. Choose **Load unpacked** and select the repository directory.
 4. Open YouTube and use the Focus Tube toolbar popup to choose what to hide.

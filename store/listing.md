@@ -13,7 +13,7 @@ When Shorts hiding is enabled, Focus Tube hides Shorts shelves, Shorts video car
 Your preferences are saved with Chrome sync. Focus Tube does not collect browsing activity, use analytics, or send data to a developer server.
 
 Developed by Animesh Sharma: https://www.animesh.cc/
-Support and updates: https://github.com/animesh-algorithm/
+Support and updates: https://github.com/animesh-algorithm/FocusTube
 
 **Single purpose:** Allow users to hide selected YouTube distractions.
 
