@@ -12,12 +12,14 @@ html[data-focus-tube-description] ytm-watch-metadata .slim-video-metadata-descri
 html[data-focus-tube-channelinfo] ytd-watch-flexy #top-row,
 html[data-focus-tube-channelinfo] ytm-watch-metadata .slim-video-information-renderer { display: none !important; }
 
-html[data-focus-tube-shorts] [data-focus-tube-shorts],
+html[data-focus-tube-shorts] [data-focus-tube-shorts-card],
 html[data-focus-tube-shorts] ytd-reel-shelf-renderer,
 html[data-focus-tube-shorts] ytd-rich-shelf-renderer[is-shorts],
 html[data-focus-tube-shorts] ytd-rich-shelf-renderer:has(a[href^="/shorts/"]),
 html[data-focus-tube-shorts] ytm-reel-shelf-renderer,
 html[data-focus-tube-shorts] ytd-guide-entry-renderer:has(a[href^="/shorts"]),
+html[data-focus-tube-shorts] ytd-guide-entry-renderer:has(a[title="Shorts"]),
 html[data-focus-tube-shorts] ytd-mini-guide-entry-renderer:has(a[href^="/shorts"]),
+html[data-focus-tube-shorts] ytd-mini-guide-entry-renderer:has(a[title="Shorts"]),
 html[data-focus-tube-shorts] ytm-pivot-bar-item-renderer:has(a[href^="/shorts"]),
 html[data-focus-tube-shorts] ytm-guide-entry-renderer:has(a[href^="/shorts"]) { display: none !important; }

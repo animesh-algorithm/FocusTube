@@ -32,7 +32,7 @@ No build step or third-party packages are required. Run `node --test` for the au
 
 ## Release
 
-Package the root files listed in `manifest.json`, plus `settings.js`, `popup.css`, and `README.md`, into a ZIP with `manifest.json` at the archive root. Test the ZIP as an unpacked extension in current Chrome, then upload it through the Chrome Web Store developer dashboard. Store listing copy is in [`store/listing.md`](store/listing.md). Confirm privacy disclosures and screenshots against the built package before submitting.
+Package `manifest.json`, `settings.js`, `content.js`, `styles.css`, `popup.html`, `popup.css`, `popup.js`, and `icon.png` into a ZIP with `manifest.json` at the archive root. Test the packaged files in current Chrome, then upload the ZIP through the Chrome Web Store developer dashboard. Store listing copy is in [`store/listing.md`](store/listing.md). Confirm privacy disclosures and screenshots against the built package before submitting.
 
 ## Developer
 

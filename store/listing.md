@@ -6,14 +6,18 @@
 
 **Detailed description:**
 
-Focus Tube helps you watch YouTube with fewer distractions. Use its toolbar popup to choose what you want to hide. Comments and related videos are hidden by default; descriptions, channel information, and Shorts are optional.
+Focus Tube helps you watch YouTube with fewer distractions. Choose what to hide from the toolbar popup: comments and related videos are hidden by default; descriptions, channel information, and Shorts are optional.
 
-When Shorts hiding is enabled, Focus Tube hides Shorts shelves, Shorts video cards, and Shorts navigation across supported desktop and mobile YouTube pages. Opening a Shorts URL returns you to YouTube's home page. Settings update open tabs automatically.
+Turn on Shorts hiding to remove Shorts shelves, video cards, and navigation across supported desktop and mobile YouTube pages. Opening a Shorts URL returns you to YouTube's home page. Changes apply to open tabs automatically.
 
-Your preferences are saved with Chrome sync. Focus Tube does not collect browsing activity, use analytics, or send data to a developer server.
+Your choices are saved with Chrome sync. Focus Tube does not collect browsing activity, use analytics, or send data to a developer server.
 
 Developed by Animesh Sharma: https://www.animesh.cc/
-Support and updates: https://github.com/animesh-algorithm/FocusTube
+Source and support: https://github.com/animesh-algorithm/FocusTube
+
+**Screenshot:** `store/assets/screenshot-settings-1280x800.jpg` shows only the extension settings. It contains no YouTube recommendations or account activity.
+
+**Small promo tile:** `store/assets/promo-440x280.jpg` is original brand artwork.
 
 **Single purpose:** Allow users to hide selected YouTube distractions.
 
