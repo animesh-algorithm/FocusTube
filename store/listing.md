@@ -19,6 +19,10 @@ Support and updates: https://github.com/animesh-algorithm/FocusTube
 
 **Permission rationale:** `storage` saves users' selected options with Chrome sync.
 
+**Host access rationale:** The content script runs only on `www.youtube.com` and `m.youtube.com` to hide selected distractions on those pages.
+
 **Privacy disclosure:** The extension contains no developer-controlled data collection. Chrome may sync settings under the user's browser account.
+
+**Privacy policy URL:** https://github.com/animesh-algorithm/FocusTube/blob/master/PRIVACY.md
 
 **Review prompt:** The popup includes a quiet, optional link to the Chrome Web Store reviews page. It asks for no specific rating and provides no incentive.

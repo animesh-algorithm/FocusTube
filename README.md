@@ -2,6 +2,8 @@
 
 Focus Tube lets you choose which distractions to hide on YouTube. The extension runs locally in Chrome, stores preferences with Chrome sync, and does not send browsing activity to a server.
 
+See the [privacy policy](PRIVACY.md) for details.
+
 ## Features
 
 - Hide comments and related videos on watch pages (enabled by default).
