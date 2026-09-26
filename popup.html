@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Focus Tube</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <main>
+    <h1>Focus Tube</h1>
+    <p>Choose what to hide on YouTube. Changes apply to open tabs automatically.</p>
+    <fieldset>
+      <legend>Distractions</legend>
+      <label><input type="checkbox" name="shorts"> Shorts across YouTube</label>
+      <label><input type="checkbox" name="comments"> Video comments</label>
+      <label><input type="checkbox" name="recommendations"> Related videos</label>
+      <label><input type="checkbox" name="description"> Video description</label>
+      <label><input type="checkbox" name="channelInfo"> Channel information</label>
+    </fieldset>
+    <p id="status" role="status" aria-live="polite"></p>
+    <footer>
+      <a href="https://www.animesh.cc/" target="_blank" rel="noopener noreferrer">Animesh Sharma</a>
+      <a href="https://chromewebstore.google.com/detail/idohimhijfbbnnbmfefaacabnjkbooeo/reviews" target="_blank" rel="noopener noreferrer">Review Focus Tube</a>
+    </footer>
+  </main>
+  <script src="settings.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

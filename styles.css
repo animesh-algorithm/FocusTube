@@ -1,0 +1,23 @@
+html[data-focus-tube-comments] ytd-watch-flexy #comments,
+html[data-focus-tube-comments] ytm-comments-entry-point-header-renderer,
+html[data-focus-tube-comments] ytm-item-section-renderer[section-identifier="comments-entry-point"] { display: none !important; }
+
+html[data-focus-tube-recommendations] ytd-watch-flexy #related,
+html[data-focus-tube-recommendations] ytm-watch-next-secondary-results-renderer { display: none !important; }
+
+html[data-focus-tube-description] ytd-watch-flexy #description-inner,
+html[data-focus-tube-description] ytd-watch-flexy ytd-text-inline-expander,
+html[data-focus-tube-description] ytm-watch-metadata .slim-video-metadata-description { display: none !important; }
+
+html[data-focus-tube-channelinfo] ytd-watch-flexy #top-row,
+html[data-focus-tube-channelinfo] ytm-watch-metadata .slim-video-information-renderer { display: none !important; }
+
+html[data-focus-tube-shorts] [data-focus-tube-shorts],
+html[data-focus-tube-shorts] ytd-reel-shelf-renderer,
+html[data-focus-tube-shorts] ytd-rich-shelf-renderer[is-shorts],
+html[data-focus-tube-shorts] ytd-rich-shelf-renderer:has(a[href^="/shorts/"]),
+html[data-focus-tube-shorts] ytm-reel-shelf-renderer,
+html[data-focus-tube-shorts] ytd-guide-entry-renderer:has(a[href^="/shorts"]),
+html[data-focus-tube-shorts] ytd-mini-guide-entry-renderer:has(a[href^="/shorts"]),
+html[data-focus-tube-shorts] ytm-pivot-bar-item-renderer:has(a[href^="/shorts"]),
+html[data-focus-tube-shorts] ytm-guide-entry-renderer:has(a[href^="/shorts"]) { display: none !important; }
