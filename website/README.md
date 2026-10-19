@@ -18,6 +18,6 @@ The browser preview is an illustration, not a screenshot or an embedded YouTube 
 
 ## Motion and artwork
 
-The website uses native Web Animations, CSS keyframes, and one requestAnimationFrame scroll update, without an animation framework. Scroll entrances reveal heading words and cards; the demo tilts with scroll; illustrations and ticker animate continuously. The fixed motion control stops animations, off-tab animations pause, and the system reduced-motion preference disables motion. The content remains visible when JavaScript is unavailable.
+The website uses native Web Animations, CSS keyframes, and one requestAnimationFrame scroll update, without an animation framework. Scroll entrances reveal heading words and cards; the demo tilts with scroll; illustrations and ticker animate continuously. Off-tab animations pause, and the system reduced-motion preference disables motion. The content remains visible when JavaScript is unavailable.
 
 The full-color Chrome logo is stored locally in `assets/chrome.svg`, sourced from Google's Chrome website: https://www.google.com/chrome/static/images/chrome-logo-m100.svg. Installation buttons still open the Chrome Web Store. Sine-wave section dividers are inline SVG paths, and the final section has no wave divider.

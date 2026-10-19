@@ -1,9 +1,7 @@
 const preview = document.querySelector("#browser");
 const viewButtons = document.querySelectorAll("[data-mode]");
 const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
-const motionButton = document.querySelector(".motion-control");
-let paused = false;
-const motionEnabled = () => !reducedMotion.matches && !paused;
+const motionEnabled = () => !reducedMotion.matches;
 const activeAnimations = new Set();
 
 function play(element, frames, options = {}) {
@@ -176,16 +174,16 @@ if (window.matchMedia("(hover: hover) and (pointer: fine)").matches) {
 
 function syncMotion() {
   document.documentElement.classList.toggle(
-    "motion-paused",
-    paused || reducedMotion.matches,
+    "reduced-motion",
+    reducedMotion.matches,
   );
   document.documentElement.classList.toggle("page-hidden", document.hidden);
   for (const animation of activeAnimations) {
-    if (reducedMotion.matches || paused) animation.finish();
-    else if (paused || document.hidden) animation.pause();
+    if (reducedMotion.matches) animation.finish();
+    else if (document.hidden) animation.pause();
     else animation.play();
   }
-  if (paused || reducedMotion.matches) {
+  if (reducedMotion.matches) {
     demo.style.removeProperty("--demo-y");
     demo.style.removeProperty("--demo-rotate");
     waves.forEach((wave) => wave.style.removeProperty("transform"));
@@ -197,14 +195,6 @@ function syncMotion() {
       });
   } else requestScrollUpdate();
 }
-motionButton.addEventListener("click", () => {
-  paused = !paused;
-  motionButton.setAttribute("aria-pressed", String(paused));
-  motionButton.innerHTML = paused
-    ? '<span aria-hidden="true">▶</span> Resume motion'
-    : '<span aria-hidden="true">Ⅱ</span> Pause motion';
-  syncMotion();
-});
 reducedMotion.addEventListener("change", syncMotion);
 document.addEventListener("visibilitychange", syncMotion);
 syncMotion();
