@@ -2142,3 +2142,45 @@ main {
 .rating-number {
   font-variant-numeric: tabular-nums;
 }
+
+/* Two identical groups make the scrolling strip loop without a jump. */
+.ticker {
+  padding: 28px 0 38px;
+}
+.ticker-track {
+  gap: 0;
+  animation-duration: 34s;
+}
+.ticker-group {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  gap: 42px;
+  padding-right: 42px;
+}
+.ticker-item {
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.4;
+  white-space: nowrap;
+}
+.ticker-dot {
+  font-size: 18px;
+  line-height: 1;
+  opacity: 0.45;
+}
+@media (max-width: 600px) {
+  .ticker {
+    padding: 23px 0 33px;
+  }
+  .ticker-group {
+    gap: 27px;
+    padding-right: 27px;
+  }
+  .ticker-item {
+    font-size: 11px;
+  }
+  .ticker-dot {
+    font-size: 16px;
+  }
+}
