@@ -2274,7 +2274,7 @@ main {
   }
 }
 
-/* Animesh's capital-A mark and amber pulse, matching the Hire wordmark. */
+/* Italic monogram with an amber pulse on the circle's upper-right edge. */
 .developer-mark {
   font-family: Georgia, "Times New Roman", serif;
   font-weight: 400;
@@ -2286,8 +2286,9 @@ main {
 }
 .creator-dot {
   position: absolute;
-  top: 0.16em;
-  right: -0.04em;
+  top: 14.645%;
+  left: 85.355%;
+  transform: translate(-50%, -50%);
   width: 20px;
   aspect-ratio: 1;
   border: 1px solid var(--cream);
