@@ -2184,3 +2184,167 @@ main {
     font-size: 16px;
   }
 }
+
+/* Vector icons keep the same shape and palette on desktop and mobile. */
+.ui-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.12em;
+  flex-shrink: 0;
+  overflow: visible;
+}
+.brand-icon .ui-icon {
+  width: 17px;
+  height: 17px;
+}
+.youtube-logo > .ui-icon {
+  width: 21px;
+  height: 16px;
+  vertical-align: -3px;
+}
+.address > .ui-icon {
+  width: 10px;
+  height: 10px;
+  vertical-align: -1px;
+}
+.search .ui-icon {
+  width: 11px;
+  height: 11px;
+}
+.video-duration .ui-icon {
+  width: 1em;
+  height: 1em;
+}
+.review-stars,
+.stars {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  letter-spacing: 0;
+}
+.stars > .partial-star {
+  display: inline-grid;
+  background: none;
+  color: inherit;
+  opacity: 1;
+  position: relative;
+}
+.partial-star .ui-icon {
+  color: var(--yellow);
+  clip-path: inset(0 80% 0 0);
+  position: relative;
+  z-index: 1;
+}
+.partial-star:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #a09bea;
+  clip-path: polygon(
+    50% 8%,
+    63% 35%,
+    92% 39%,
+    71% 59%,
+    76% 88%,
+    50% 74%,
+    24% 88%,
+    29% 59%,
+    8% 39%,
+    37% 35%
+  );
+}
+.privacy-art > span,
+.note-doodle,
+.price-flower,
+.developer-mark > span,
+.closing-spark {
+  line-height: 1;
+}
+.coffee .ui-icon {
+  stroke-width: 1.7;
+}
+@media (max-width: 900px) {
+  .section-wave svg {
+    width: 1440px;
+    max-width: none;
+  }
+  .section-wave {
+    height: 8px;
+  }
+}
+
+/* Animesh's capital-A mark and amber pulse, matching the Hire wordmark. */
+.developer-mark {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 145px;
+  letter-spacing: -0.085em;
+  transform: none;
+  padding-right: 0.08em;
+}
+.creator-dot {
+  position: absolute;
+  top: 24%;
+  right: 20%;
+  width: 20px;
+  aspect-ratio: 1;
+  border: 1px solid var(--cream);
+  border-radius: 50%;
+  background: #ffb000;
+  box-shadow:
+    0 0 0 1px var(--ink),
+    0 0 10px #ffb00080,
+    inset 0 0 0 1px #ffffffc7;
+  isolation: isolate;
+}
+.creator-dot:after {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  z-index: -1;
+  border: 2px solid #ffb000;
+  border-radius: 50%;
+  animation: creator-pulse 1.8s cubic-bezier(0.16, 1, 0.3, 1) infinite;
+}
+@keyframes creator-pulse {
+  0% {
+    transform: scale(0.85);
+    opacity: 0.8;
+  }
+  80%,
+  100% {
+    transform: scale(2.1);
+    opacity: 0;
+  }
+}
+.page-hidden *:before,
+.page-hidden *:after {
+  animation-play-state: paused !important;
+}
+@media (max-width: 900px) {
+  .developer-mark {
+    font-size: 120px;
+  }
+  .creator-dot {
+    width: 16px;
+  }
+}
+@media (max-width: 600px) {
+  .developer-mark {
+    font-size: 100px;
+  }
+  .creator-dot {
+    width: 13px;
+  }
+}
+.skip {
+  top: 10px;
+  transform: translateY(-200%);
+  visibility: hidden;
+}
+.skip:focus {
+  transform: none;
+  visibility: visible;
+}
