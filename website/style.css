@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;650;700&family=Nunito+Sans:opsz,wght@6..12,700;6..12,800;6..12,900;6..12,1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;650;700;900&family=Nunito+Sans:opsz,wght@6..12,700;6..12,800;6..12,900;6..12,1000&display=swap");
 :root {
   --blue: #4541ef;
   --cream: #fffde9;
@@ -2276,18 +2276,18 @@ main {
 
 /* Animesh's capital-A mark and amber pulse, matching the Hire wordmark. */
 .developer-mark {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "DM Sans", Arial, sans-serif;
   font-weight: 900;
   font-style: normal;
   font-size: 145px;
   letter-spacing: -0.085em;
   transform: none;
-  padding-right: 0.08em;
+  padding-right: 0;
 }
 .creator-dot {
   position: absolute;
-  top: 24%;
-  right: 20%;
+  top: -0.02em;
+  right: -0.18em;
   width: 20px;
   aspect-ratio: 1;
   border: 1px solid var(--cream);
@@ -2347,4 +2347,11 @@ main {
 .skip:focus {
   transform: none;
   visibility: visible;
+}
+
+.creator-monogram {
+  position: relative;
+  line-height: 1;
+  letter-spacing: -0.06em;
+  transform: translateX(-0.035em);
 }
