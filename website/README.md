@@ -22,4 +22,12 @@ The website uses native Web Animations, CSS keyframes, and one requestAnimationF
 
 The full-color Chrome logo is stored locally in `assets/chrome.svg`, sourced from Google's Chrome website: https://www.google.com/chrome/static/images/chrome-logo-m100.svg. Installation buttons still open the Chrome Web Store. Sine-wave section dividers are inline SVG paths, and appear below every section, including the final section.
 
-Decorative and interface symbols are inline SVGs rather than Unicode pictographs, so mobile platforms do not substitute colored emoji. Below 900px, divider SVGs retain their intrinsic 1440px width inside a clipped container, preserving smooth wave spacing instead of compressing the path. The developer mark uses a capital A and amber pulse based on the Hire Animesh wordmark.
+Decorative and interface symbols are inline SVGs rather than Unicode pictographs, so mobile platforms do not substitute colored emoji. Below 900px, divider SVGs retain their intrinsic 1440px width inside a clipped container, preserving smooth wave spacing instead of compressing the path. The developer mark uses an italic lowercase a and amber pulse based on the Hire Animesh wordmark.
+
+## SEO and share previews
+
+The homepage has descriptive search metadata, a canonical URL, Open Graph and Twitter large-image tags, and WebSite / SoftwareApplication JSON-LD. Structured data describes the free extension and its developer; ratings remain a dated visible snapshot rather than an automatically maintained schema claim.
+
+The 1200 × 630 share image is `assets/social-v2.png`. Editable artwork is `../scripts/social-card.html`; render it at 1200 × 630 with device scale 1 after `document.fonts.ready` resolves. It uses the same Nunito Sans and DM Sans fonts as the landing page. When replacing the image, give it a new filename and update all sharing metadata to avoid stale image caches.
+
+Canonical, Open Graph URL, structured data URLs, robots.txt, and sitemap.xml currently use https://focustube-two.vercel.app/. Update all together if the production domain changes. Indexing and rich-result display require search-engine crawling and are not guaranteed by a deployment.
