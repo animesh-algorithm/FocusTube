@@ -2276,18 +2276,18 @@ main {
 
 /* Animesh's capital-A mark and amber pulse, matching the Hire wordmark. */
 .developer-mark {
-  font-family: "DM Sans", Arial, sans-serif;
-  font-weight: 900;
-  font-style: normal;
-  font-size: 145px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 160px;
   letter-spacing: -0.085em;
   transform: none;
   padding-right: 0;
 }
 .creator-dot {
   position: absolute;
-  top: -0.02em;
-  right: -0.10em;
+  top: 0.16em;
+  right: -0.04em;
   width: 20px;
   aspect-ratio: 1;
   border: 1px solid var(--cream);
@@ -2325,7 +2325,7 @@ main {
 }
 @media (max-width: 900px) {
   .developer-mark {
-    font-size: 120px;
+    font-size: 135px;
   }
   .creator-dot {
     width: 16px;
@@ -2333,7 +2333,7 @@ main {
 }
 @media (max-width: 600px) {
   .developer-mark {
-    font-size: 100px;
+    font-size: 115px;
   }
   .creator-dot {
     width: 13px;
