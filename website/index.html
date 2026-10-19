@@ -1,61 +1,68 @@
 <!doctype html>
+
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta name="theme-color" content="#4541ef" />
-    <title>FocusTube — Keep the video. Lose the distractions.</title>
+    <meta charset="utf-8" />
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <meta content="#4541ef" name="theme-color" />
+    <title>FocusTube | Keep the video. Lose the distractions.</title>
     <meta
-      name="description"
       content="Hide YouTube comments, recommendations, Shorts, and more. FocusTube makes room for what you came to watch. Free, open source, and local."
+      name="description"
     />
     <meta
-      property="og:title"
       content="Keep the video. Lose the distractions."
+      property="og:title"
     />
     <meta
+      content="Hide YouTube distractions. Free, open source, and local."
       property="og:description"
-      content="A little extension for a more focused YouTube. Free, open source, and made for you."
     />
-    <meta property="og:type" content="website" />
+    <meta content="website" property="og:type" />
     <meta
-      property="og:image"
       content="https://focustube-two.vercel.app/assets/social.png"
+      property="og:image"
     />
-    <meta name="twitter:card" content="summary_large_image" />
-    <link rel="canonical" href="https://focustube-two.vercel.app/" />
-    <meta property="og:url" content="https://focustube-two.vercel.app/" />
-    <link rel="icon" href="assets/icon.png" />
-    <link rel="stylesheet" href="style.css" />
-    <script src="app.js" defer></script>
+    <meta content="summary_large_image" name="twitter:card" />
+    <link href="https://focustube-two.vercel.app/" rel="canonical" />
+    <meta content="https://focustube-two.vercel.app/" property="og:url" />
+    <link href="assets/icon.png" rel="icon" />
+    <link href="style.css" rel="stylesheet" />
+    <script defer="" src="app.js"></script>
   </head>
   <body>
     <a class="skip" href="#main">Skip to content</a>
     <header class="nav">
-      <a class="brand" href="#" aria-label="FocusTube home"
+      <a aria-label="FocusTube home" class="brand" href="#"
         ><span class="brand-icon">▶</span> FocusTube</a
       >
       <nav aria-label="Main navigation">
-        <a href="#features">The little details</a
-        ><a href="#reviews">Kind words</a><a href="#pricing">Pricing</a>
+        <a href="#features">Features</a><a href="#reviews">Reviews</a
+        ><a href="#pricing">Pricing</a>
       </nav>
       <a class="button small install" href="https://link.animesh.cc/focustube"
-        >Get FocusTube <span aria-hidden="true">↗</span></a
-      >
+        ><img
+          alt=""
+          class="chrome-logo"
+          height="24"
+          src="assets/chrome.svg"
+          width="24"
+        />Get FocusTube
+      </a>
     </header>
     <main id="main">
-      <section class="hero scallop">
+      <section class="hero" style="--wave-fill: #f4efbc">
         <div class="hero-copy">
-          <p class="eyebrow">A LITTLE EXTENSION. A LOT LESS DISTRACTION.</p>
+          <p class="eyebrow">FOR THE VIDEO YOU CAME TO WATCH</p>
           <h1>
             Keep the video.<br />Lose the
             <span class="underlined"
               >distractions.<svg
-                viewBox="0 0 700 25"
-                preserveAspectRatio="none"
                 aria-hidden="true"
+                preserveAspectRatio="none"
+                viewBox="0 0 700 25"
               >
-                <path d="M5 17 Q300 -4 695 10 M70 24 Q380 8 650 20" /></svg
+                <path d="M5 17 Q300 -4 695 10 M70 24 Q380 8 650 20"></path></svg
             ></span>
           </h1>
           <p class="lede">
@@ -70,30 +77,38 @@
           <a
             class="button cream install"
             href="https://link.animesh.cc/focustube"
-            ><svg viewBox="0 0 24 24" aria-hidden="true">
-              <circle cx="12" cy="12" r="10" />
-              <circle cx="12" cy="12" r="4" />
-              <path d="M12 8h9M8.5 14l-4 7M14 15l-4-14" /></svg
-            >Add to Chrome <span class="button-note">— Free</span
-            ><span aria-hidden="true">↗</span></a
+            ><img
+              alt=""
+              class="chrome-logo"
+              height="24"
+              src="assets/chrome.svg"
+              width="24"
+            />Add to Chrome
+            <span class="button-note"
+              ><span class="free-label">Free</span></span
+            ></a
           ><a
+            aria-label="Rated 4.2 out of 5 from 6 Chrome Web Store ratings. Read reviews."
             class="rating"
             href="https://chromewebstore.google.com/detail/focus-tube/idohimhijfbbnnbmfefaacabnjkbooeo/reviews"
-            ><span class="stars" aria-hidden="true">★★★★<span>★</span></span
-            ><b>4.2 out of 5</b
-            ><span>on the Chrome Web Store · 6 ratings</span></a
+            ><strong class="rating-number">4.2<span>/ 5</span></strong
+            ><span class="rating-details"
+              ><span aria-hidden="true" class="stars">★★★★<span>★</span></span
+              ><b>Rated by FocusTube users</b
+              ><span>6 ratings on the Chrome Web Store</span></span
+            ><span class="rating-action">Read reviews</span></a
           >
         </div>
         <div class="demo-wrap" id="demo">
           <div class="demo-heading">
             <span class="handwritten">Less noise. More of this.</span>
             <div
+              aria-label="Illustrative demo view"
               class="segmented"
               role="group"
-              aria-label="Illustrative demo view"
             >
-              <button data-mode="before" aria-pressed="false">Before</button
-              ><button data-mode="focused" aria-pressed="true">
+              <button aria-pressed="false" data-mode="before">Before</button
+              ><button aria-pressed="true" data-mode="focused">
                 With FocusTube <span aria-hidden="true">✦</span>
               </button>
             </div>
@@ -101,8 +116,7 @@
           <div class="browser focused" id="browser">
             <div class="browser-chrome">
               <span class="traffic"><i></i><i></i><i></i></span
-              ><span class="address">♧ &nbsp; youtube.com/watch</span
-              ><span>＋</span>
+              ><span class="address">♧   youtube.com/watch</span><span>＋</span>
             </div>
             <div class="youtube-bar">
               <span class="youtube-logo">▰ <b>YouTube</b></span
@@ -121,7 +135,7 @@
                     The universe.<br />And our place in it.
                   </div>
                   <span class="video-duration"
-                    >▶ ━━━━━━━━━━──── &nbsp; 12:48 / 38:02 &nbsp; ⛶</span
+                    >▶ ━━━━━━━━━━────   12:48 / 38:02   ⛶</span
                   >
                 </div>
                 <h3>The universe, and our place in it</h3>
@@ -129,7 +143,7 @@
                   <span class="channel-avatar">◒</span
                   ><span
                     >Something worth watching<br /><small
-                      >A little curiosity goes a long way.</small
+                      >A documentary for a curious afternoon.</small
                     ></span
                   ><span class="subscribe">Subscribe</span>
                 </div>
@@ -172,20 +186,42 @@
             An illustrative preview. Your videos stay exactly as they are.
           </p>
         </div>
+        <div aria-hidden="true" class="section-wave">
+          <svg preserveAspectRatio="none" viewBox="0 0 1440 54">
+            <path
+              d="M0 27 C60 3 120 3 180 27 S300 51 360 27 S480 3 540 27 S660 51 720 27 S840 3 900 27 S1020 51 1080 27 S1200 3 1260 27 S1380 51 1440 27 V54 H0 Z"
+            ></path>
+          </svg>
+        </div>
       </section>
-      <div class="ticker">
-        <span>Less scrolling. More learning.</span
-        ><span aria-hidden="true">✳</span
-        ><span>Keep your curiosity. Skip the rabbit holes.</span
-        ><span aria-hidden="true">✳</span
-        ><span>A calmer corner of the internet.</span>
+      <div
+        aria-label="Comments, out of sight. Related videos, hidden."
+        class="ticker"
+      >
+        <div class="ticker-track" aria-hidden="true">
+          <span>Comments, out of sight.</span><span aria-hidden="true">✳</span
+          ><span>Related videos, hidden.</span><span aria-hidden="true">✳</span
+          ><span>Shorts, optional.</span> <span>Comments, out of sight.</span
+          ><span aria-hidden="true">✳</span><span>Related videos, hidden.</span
+          ><span aria-hidden="true">✳</span><span>Shorts, optional.</span>
+        </div>
+        <div aria-hidden="true" class="section-wave">
+          <svg preserveAspectRatio="none" viewBox="0 0 1440 54">
+            <path
+              d="M0 27 C60 3 120 3 180 27 S300 51 360 27 S480 3 540 27 S660 51 720 27 S840 3 900 27 S1020 51 1080 27 S1200 3 1260 27 S1380 51 1440 27 V54 H0 Z"
+            ></path>
+          </svg>
+        </div>
       </div>
-      <section class="features section" id="features">
-        <p class="eyebrow">GOODBYE, RABBIT HOLES.</p>
+      <section
+        class="features section"
+        id="features"
+        style="--wave-fill: #f1f0dc"
+      >
+        <p class="eyebrow">CHOOSE WHAT YOU SEE</p>
         <h2>Make space for what<br />you came to watch.</h2>
         <p class="section-intro">
-          All the good stuff on YouTube.<br />A little less of everything around
-          it.
+          Watch what interests you.<br />Hide the parts that pull you away.
         </p>
         <div class="feature-grid">
           <article class="feature">
@@ -194,7 +230,9 @@
               <div class="vanishing-lines"><i></i><i></i><i></i></div>
               <span class="cross-mark">×</span>
             </div>
-            <span class="feature-number">01 / A CLEARER VIEW</span>
+            <span class="feature-number"
+              >01 / COMMENTS &amp; RECOMMENDATIONS</span
+            >
             <h3>The video gets the spotlight.</h3>
             <p>
               Hide comments and related videos. Give the thing you chose to
@@ -206,7 +244,7 @@
               <span class="shorts-symbol">ϟ</span
               ><span class="off-tag">Shorts? Your choice. <i></i></span>
             </div>
-            <span class="feature-number">02 / SKIP THE SCROLL</span>
+            <span class="feature-number">02 / SHORTS</span>
             <h3>Shorts can sit this one out.</h3>
             <p>
               Optionally hide Shorts from shelves, video cards, and navigation.
@@ -221,7 +259,7 @@
                 ><span>Channel info <i class="toggle"></i></span>
               </div>
             </div>
-            <span class="feature-number">03 / MAKE IT YOURS</span>
+            <span class="feature-number">03 / YOUR SETTINGS</span>
             <h3>Your YouTube. Your call.</h3>
             <p>
               Choose what to hide, including descriptions and channel
@@ -229,40 +267,59 @@
             </p>
           </article>
         </div>
+        <div aria-hidden="true" class="section-wave">
+          <svg preserveAspectRatio="none" viewBox="0 0 1440 54">
+            <path
+              d="M0 27 C60 3 120 3 180 27 S300 51 360 27 S480 3 540 27 S660 51 720 27 S840 3 900 27 S1020 51 1080 27 S1200 3 1260 27 S1380 51 1440 27 V54 H0 Z"
+            ></path>
+          </svg>
+        </div>
       </section>
-      <section class="privacy section">
-        <div class="privacy-art" aria-hidden="true">
-          <span>♡</span><i>Just between<br />you & your browser.</i>
+      <section class="privacy section" style="--wave-fill: #4541ef">
+        <div aria-hidden="true" class="privacy-art">
+          <span>♡</span><i>Just between<br />you &amp; your browser.</i>
         </div>
         <div>
-          <p class="eyebrow">A LITTLE PEACE OF MIND</p>
+          <p class="eyebrow">PRIVACY</p>
           <h2>Your watching<br />stays yours.</h2>
           <p>
-            FocusTube runs locally. Your preferences sync with Chrome; your
-            browsing activity isn’t sent to a server.
+            FocusTube runs locally and does not collect your browsing activity.
+            Preferences use Chrome's storage and can sync according to your
+            Chrome settings.
           </p>
           <a
             class="text-link"
             href="https://github.com/animesh-algorithm/FocusTube/blob/master/PRIVACY.md"
-            >Read the privacy policy <span>↗</span></a
-          >
+            >Read the privacy policy <span></span
+          ></a>
+        </div>
+        <div aria-hidden="true" class="section-wave">
+          <svg preserveAspectRatio="none" viewBox="0 0 1440 54">
+            <path
+              d="M0 27 C60 3 120 3 180 27 S300 51 360 27 S480 3 540 27 S660 51 720 27 S840 3 900 27 S1020 51 1080 27 S1200 3 1260 27 S1380 51 1440 27 V54 H0 Z"
+            ></path>
+          </svg>
         </div>
       </section>
-      <section class="reviews section scallop" id="reviews">
-        <p class="eyebrow">FROM REAL PEOPLE, WITH LOVE</p>
-        <h2>A little more focus.<br />In their words.</h2>
+      <section
+        class="reviews section"
+        id="reviews"
+        style="--wave-fill: #fffde9"
+      >
+        <p class="eyebrow">FROM THE CHROME WEB STORE</p>
+        <h2>What people<br />are saying.</h2>
         <a
           class="review-summary"
           href="https://chromewebstore.google.com/detail/focus-tube/idohimhijfbbnnbmfefaacabnjkbooeo/reviews"
           ><span>★</span> 4.2 / 5
-          <small>from 6 ratings on the Chrome Web Store ↗</small></a
+          <small>from 6 ratings on the Chrome Web Store</small></a
         >
         <div class="review-grid">
           <figure>
-            <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <div aria-label="5 out of 5 stars" class="review-stars">★★★★★</div>
             <blockquote lang="es">
-              “Excelente app para ser más productivo, te enfocas en lo que
-              quieres ver”
+              &quot;Excelente app para ser más productivo, te enfocas en lo que
+              quieres ver&quot;
             </blockquote>
             <figcaption>
               <span class="review-avatar pink">J</span
@@ -274,9 +331,9 @@
             </figcaption>
           </figure>
           <figure>
-            <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <div aria-label="5 out of 5 stars" class="review-stars">★★★★★</div>
             <blockquote>
-              “It is very useful, everyone should use this extension.”
+              &quot;It is very useful, everyone should use this extension.&quot;
             </blockquote>
             <figcaption>
               <span class="review-avatar green">R</span
@@ -286,11 +343,11 @@
             </figcaption>
           </figure>
           <figure>
-            <div class="review-stars" aria-label="4 out of 5 stars">
+            <div aria-label="4 out of 5 stars" class="review-stars">
               ★★★★<span>☆</span>
             </div>
             <blockquote>
-              “Most needed feature , greatful to the developer”
+              &quot;Most needed feature , greatful to the developer&quot;
             </blockquote>
             <figcaption>
               <span class="review-avatar purple">G</span
@@ -305,86 +362,168 @@
         <a
           class="text-link"
           href="https://chromewebstore.google.com/detail/focus-tube/idohimhijfbbnnbmfefaacabnjkbooeo/reviews"
-          >Read all reviews, in every language <span>↗</span></a
-        >
+          >Read all reviews, in every language <span></span
+        ></a>
         <p class="review-footnote">
           Selected reviews, quoted as written. Rating snapshot: October 19,
           2026.
         </p>
+        <div aria-hidden="true" class="section-wave">
+          <svg preserveAspectRatio="none" viewBox="0 0 1440 54">
+            <path
+              d="M0 27 C60 3 120 3 180 27 S300 51 360 27 S480 3 540 27 S660 51 720 27 S840 3 900 27 S1020 51 1080 27 S1200 3 1260 27 S1380 51 1440 27 V54 H0 Z"
+            ></path>
+          </svg>
+        </div>
       </section>
-      <section class="pricing section" id="pricing">
-        <p class="eyebrow">SMALL EXTENSION. NO BIG COMMITMENT.</p>
+      <section
+        class="pricing section"
+        id="pricing"
+        style="--wave-fill: #eee8fa"
+      >
+        <p class="eyebrow">PRICING</p>
         <h2>Free. Simple as that.</h2>
         <div class="price-card">
           <div>
-            <span class="price-label">THE WHOLE LITTLE THING</span>
+            <span class="price-label">EVERY FEATURE INCLUDED</span>
             <div class="price">$0<span>Free to use.</span></div>
-            <p>More focus shouldn’t come<br />with a subscription.</p>
+            <p>More focus shouldn't come<br />with a subscription.</p>
           </div>
           <div>
             <ul>
-              <li>Hide comments & related videos</li>
+              <li>Hide comments &amp; related videos</li>
               <li>Optional Shorts hiding</li>
-              <li>Description & channel controls</li>
+              <li>Description &amp; channel controls</li>
               <li>Preferences synced with Chrome</li>
               <li>Open source. Runs locally.</li>
             </ul>
             <a
               class="button blue install"
               href="https://link.animesh.cc/focustube"
-              >Add to Chrome — Free <span>↗</span></a
-            >
+              ><img
+                alt=""
+                class="chrome-logo"
+                height="24"
+                src="assets/chrome.svg"
+                width="24"
+              />Add to Chrome <span class="free-label">Free</span>
+            </a>
           </div>
-          <span class="price-flower" aria-hidden="true">✳</span>
+          <span aria-hidden="true" class="price-flower">✳</span>
+        </div>
+        <div aria-hidden="true" class="section-wave">
+          <svg preserveAspectRatio="none" viewBox="0 0 1440 54">
+            <path
+              d="M0 27 C60 3 120 3 180 27 S300 51 360 27 S480 3 540 27 S660 51 720 27 S840 3 900 27 S1020 51 1080 27 S1200 3 1260 27 S1380 51 1440 27 V54 H0 Z"
+            ></path>
+          </svg>
         </div>
       </section>
-      <section class="developer section">
-        <div class="developer-mark" aria-hidden="true">a<span>✳</span></div>
+      <section class="developer section" style="--wave-fill: #fffde9">
+        <div aria-hidden="true" class="developer-mark">a<span>✳</span></div>
         <div>
-          <p class="eyebrow">HELLO FROM THE OTHER SIDE OF THE SCREEN</p>
-          <h2>A small extension,<br />built by Animesh.</h2>
+          <p class="eyebrow">THE DEVELOPER</p>
+          <h2>Hi, I'm<br />Animesh Sharma.</h2>
           <p>
-            I’m Animesh Sharma, a product engineer. FocusTube is a small
-            contribution to a calmer internet. Thanks for giving it a place in
-            your browser.
+            I'm a product engineer. You can explore my other work, get in touch,
+            or look through FocusTube's source code.
           </p>
           <div class="developer-links">
-            <a href="https://www.animesh.cc/">Portfolio ↗</a
-            ><a href="https://hire.animesh.cc/">Work with me ↗</a
-            ><a href="https://github.com/animesh-algorithm/FocusTube"
-              >GitHub ↗</a
-            >
+            <a href="https://www.animesh.cc/">Portfolio</a
+            ><a href="https://hire.animesh.cc/">Work with me</a
+            ><a href="https://github.com/animesh-algorithm/FocusTube">GitHub</a>
           </div>
           <a class="coffee" href="https://link.animesh.cc/coffee"
-            ><span aria-hidden="true">☕</span> Buy me a coffee
-            <span>↗</span></a
+            ><span aria-hidden="true">☕</span> Buy me a coffee <span></span></a
           ><small class="coffee-note"
-            >Enjoying FocusTube? A little coffee goes a long way.</small
+            >If FocusTube helps you, you can support its development.</small
           >
+        </div>
+        <div aria-hidden="true" class="section-wave">
+          <svg preserveAspectRatio="none" viewBox="0 0 1440 54">
+            <path
+              d="M0 27 C60 3 120 3 180 27 S300 51 360 27 S480 3 540 27 S660 51 720 27 S840 3 900 27 S1020 51 1080 27 S1200 3 1260 27 S1380 51 1440 27 V54 H0 Z"
+            ></path>
+          </svg>
+        </div>
+      </section>
+      <section
+        class="gratitude section"
+        id="thank-you"
+        style="--wave-fill: #4541ef"
+      >
+        <div class="note-paper">
+          <span aria-hidden="true" class="note-doodle">♡</span>
+          <p class="eyebrow">A NOTE FROM ME</p>
+          <h2>Thank you for<br />using FocusTube.</h2>
+          <div class="note-body">
+            <p>
+              I built FocusTube because I kept running into the same problem:
+              I'd open YouTube to watch something useful, then get distracted by
+              everything around it. I just wanted a way to stay with the video
+              I'd chosen.
+            </p>
+            <p>
+              It was a personal project to solve that problem. Then other people
+              started using it, and some of you took the time to leave such kind
+              reviews.
+            </p>
+            <p>
+              Reading those words means a lot to me. Thank you for trying
+              FocusTube, for sharing what helped, and for letting me know when
+              something didn't work.
+            </p>
+            <p class="note-last">I really appreciate it.</p>
+          </div>
+          <div class="note-signature">
+            Animesh<span>Creator of FocusTube</span>
+          </div>
+        </div>
+        <div aria-hidden="true" class="section-wave">
+          <svg preserveAspectRatio="none" viewBox="0 0 1440 54">
+            <path
+              d="M0 27 C60 3 120 3 180 27 S300 51 360 27 S480 3 540 27 S660 51 720 27 S840 3 900 27 S1020 51 1080 27 S1200 3 1260 27 S1380 51 1440 27 V54 H0 Z"
+            ></path>
+          </svg>
         </div>
       </section>
       <section class="closing">
-        <p class="eyebrow">LESS NOISE. MORE OF WHAT MATTERS.</p>
-        <h2>Stay with what<br />you came for<span>✦</span></h2>
+        <p class="eyebrow">READY WHEN YOU ARE</p>
+        <h2>
+          Stay with what<br />you came for<span
+            class="closing-spark"
+            aria-hidden="true"
+            >✦</span
+          >
+        </h2>
         <a class="button cream install" href="https://link.animesh.cc/focustube"
-          >Add to Chrome — Free <span>↗</span></a
-        >
+          ><img
+            alt=""
+            class="chrome-logo"
+            height="24"
+            src="assets/chrome.svg"
+            width="24"
+          />Add to Chrome <span class="free-label">Free</span>
+        </a>
       </section>
     </main>
     <footer>
       <a class="brand" href="#"><span class="brand-icon">▶</span> FocusTube</a>
-      <p>Made with care. And a little less distraction.</p>
+      <p>Built by Animesh Sharma.</p>
       <div>
         <a
           href="https://github.com/animesh-algorithm/FocusTube/blob/master/PRIVACY.md"
           >Privacy</a
         ><a href="https://github.com/animesh-algorithm/FocusTube/issues"
-          >Report an issue ↗</a
+          >Report an issue</a
         >
       </div>
       <small
         >Independent extension. Not affiliated with YouTube or Google.</small
       >
     </footer>
+    <button aria-pressed="false" class="motion-control" type="button">
+      <span aria-hidden="true">Ⅱ</span> Pause motion
+    </button>
   </body>
 </html>
