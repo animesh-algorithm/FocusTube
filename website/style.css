@@ -2287,7 +2287,7 @@ main {
 .creator-dot {
   position: absolute;
   top: -0.02em;
-  right: -0.18em;
+  right: -0.10em;
   width: 20px;
   aspect-ratio: 1;
   border: 1px solid var(--cream);
