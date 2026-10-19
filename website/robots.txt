@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://focustube-two.vercel.app/sitemap.xml
